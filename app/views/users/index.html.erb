@@ -1,0 +1,10 @@
+<h1>Users</h1>
+
+<ul>
+	<% @users.each do |user| %>
+		<li><%= user.name %></li>
+	<% end %>
+</ul>
+
+<!-- Lets spit out the user_id to see a successful login -->
+<strong>Session user id: </strong><%= session[:user_id] %>
